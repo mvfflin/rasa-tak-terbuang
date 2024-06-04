@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    @apply transition-all;
+}
+
+.cover-makanan {
+    background-image: linear-gradient(to top, rgb(70, 70, 70), rgb(70, 70, 70)),
+        url("../assets/cover-makanan.jpg");
+}
+
+.btn {
+    @apply bg-green-700 p-2 px-7 text-xl rounded-md hover:bg-green-500 focus:bg-green-500 hover:scale-110 transition-all disabled:dark:opacity-5 disabled:bg-green-800 text-white;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-body: 200, 200, 200;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 24, 24, 27;
+        --background-end-rgb: 24, 24, 27;
+        --background-body: 24, 24, 27;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-zinc-300;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }

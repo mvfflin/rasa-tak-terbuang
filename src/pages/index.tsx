@@ -8,6 +8,7 @@ import PersonNull from "../assets/person-placeholder.jpg";
 import Person from "@/types/person";
 import foto from "@/types/fotos";
 import { BiLogoInstagram, BiLogoYoutube, BiWorld } from "react-icons/bi";
+import Link from "next/link";
 // import FoodCover from "../assets/cover-makanan.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -83,12 +84,12 @@ export default function Home() {
                     {HomeTexts[0]}
                 </h2>
                 {/* <hr className="mb-8 text-white lg:w-96 w-auto mx-auto"></hr> */}
-                <a
+                <Link
                     href="#about"
                     className="lg:text-lg lg:hover:text-xl bg-white bg-opacity-0 hover:bg-opacity-100 border-2 border-white hover:text-black text-white py-2 mt-20 px-14"
                 >
                     SEE MORE
-                </a>
+                </Link>
             </section>
             <section id="about" className="bg-orange-50 h-full w-full">
                 <div className="lg:inline-flex">
@@ -189,11 +190,11 @@ export default function Home() {
                                 <h1 className="text-emerald-400 font-extrabold">
                                     Website <BiWorld className="inline-flex" />
                                 </h1>
-                                <a href="/" className="hover:underline">
+                                <Link href="/" className="hover:underline">
                                     <h2 className="text-black font-semibold">
                                         rasatakterbuang.mvffin.my.id
                                     </h2>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <h1 className="text-emerald-400 font-extrabold">

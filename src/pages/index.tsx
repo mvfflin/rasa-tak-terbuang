@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import PrototypeImage from "../assets/prototypecuk.png";
-import Proto1 from "../assets/prototype.jpeg";
+import Proto1 from "@/assets/fotbar-landscape.jpg";
 import logoRTT from "../../public/logo-big-nobg.png";
 import { useEffect, useState } from "react";
 import PersonNull from "../assets/person-placeholder.jpg";
 import Person from "@/types/person";
 import foto from "@/types/fotos";
+import { BiLogoInstagram, BiLogoYoutube, BiWorld } from "react-icons/bi";
 // import FoodCover from "../assets/cover-makanan.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -92,7 +93,7 @@ export default function Home() {
             <section id="about" className="bg-orange-50 h-full w-full">
                 <div className="lg:inline-flex">
                     <div className="lg:inline-block lg:mr-20 text-justify lg:text-xl p-20">
-                        <h1 className="text-4xl my-5 font-garet">
+                        <h1 className="text-4xl my-5 font-garet font-bold">
                             What is Rasa Tak Terbuang?
                         </h1>
                         <h2 className="font-garet">
@@ -111,7 +112,7 @@ export default function Home() {
                     <Image
                         alt="prototype"
                         src={Proto1}
-                        className="lg:h-full w-full h-full"
+                        className="lg:h-full w-[800px] h-full"
                     />
                 </div>
             </section>
@@ -119,7 +120,7 @@ export default function Home() {
                 id="team"
                 className="bg-orange-100 h-full w-full py-20 px-20"
             >
-                <h1 className="lg:text-5xl text-3xl text-green-950 font-bold text-center font-garet">
+                <h1 className="lg:text-5xl text-3xl text-black font-bold text-center font-garet">
                     Meet our team.
                 </h1>
                 <div className="lg:flex-row flex-col h-full flex flex-wrap gap-20 mt-20 mx-auto justify-center">
@@ -170,14 +171,15 @@ export default function Home() {
                         className="lg:h-[500px] lg:w-[600px] h-full object-cover"
                     />
                     <div className="lg:ml-5 lg:text-xl lg:p-12 p-10">
-                        <h1 className="text-4xl my-5 font-garet">
+                        <h1 className="text-4xl my-5 font-garet font-bold">
                             Application
                             <br /> Prototype
                         </h1>
                         <ul className="font-garet space-y-5">
                             <li>
                                 <h1 className="text-emerald-400 font-extrabold">
-                                    Instagram
+                                    Instagram{" "}
+                                    <BiLogoInstagram className="inline-flex" />
                                 </h1>
                                 <h2 className="text-black font-semibold">
                                     @rasatakterbuang
@@ -185,15 +187,18 @@ export default function Home() {
                             </li>
                             <li>
                                 <h1 className="text-emerald-400 font-extrabold">
-                                    Website
+                                    Website <BiWorld className="inline-flex" />
                                 </h1>
-                                <h2 className="text-black font-semibold">
-                                    rasatakterbuang.mvffin.my.id
-                                </h2>
+                                <a href="/" className="hover:underline">
+                                    <h2 className="text-black font-semibold">
+                                        rasatakterbuang.mvffin.my.id
+                                    </h2>
+                                </a>
                             </li>
                             <li>
                                 <h1 className="text-emerald-400 font-extrabold">
-                                    YouTube
+                                    YouTube{" "}
+                                    <BiLogoYoutube className="inline-flex" />
                                 </h1>
                                 <h2 className="text-black font-semibold">
                                     Rasa Tak Terbuang

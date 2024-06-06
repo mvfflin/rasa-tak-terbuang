@@ -34,6 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     sizes="16x16"
                     href="./logo-desc-big-nobg.png"
                 />
+                {/* Fonts */}
             </Head>
             {/* <TopBar /> */}
             {/* <div className="cursor-style" ref={cursor}></div> */}

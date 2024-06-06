@@ -18,17 +18,17 @@ export const BottomBar = () => {
                                 // className="h-8 me-3"
                                 alt="RTT Logo"
                             />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                                 Rasa Tak Terbuang
                             </span>
                         </a>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                            <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                                 Follow us
                             </h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            <ul className="text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a
                                         href="https://instagram.com/"
@@ -48,10 +48,10 @@ export const BottomBar = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                            <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                                 Legal
                             </h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            <ul className="text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a href="#" className="hover:underline">
                                         Privacy Policy
@@ -66,9 +66,9 @@ export const BottomBar = () => {
                         </div>
                     </div>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                    <span className="text-sm sm:text-center text-gray-400">
                         © 2023{" "}
                         <a
                             href="https://rasatakterbuang.mvffin.my.id/"
@@ -79,10 +79,7 @@ export const BottomBar = () => {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
-                        <a
-                            href="#"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                        >
+                        <a href="#" className="text-gray-500 hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -100,7 +97,7 @@ export const BottomBar = () => {
                         </a>
                         <a
                             href="#"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                            className="text-gray-500 hover:text-white ms-5"
                         >
                             <svg
                                 className="w-4 h-4"
@@ -115,7 +112,7 @@ export const BottomBar = () => {
                         </a>
                         <a
                             href="#"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                            className="text-gray-500 hover:text-white ms-5"
                         >
                             <svg
                                 className="w-4 h-4"
@@ -134,7 +131,7 @@ export const BottomBar = () => {
                         </a>
                         <a
                             href="https://github.com/mvfflin/web-rasa-tak-terbuang"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                            className="text-gray-500 hover:text-white ms-5"
                         >
                             <svg
                                 className="w-4 h-4"
@@ -153,7 +150,7 @@ export const BottomBar = () => {
                         </a>
                         <a
                             href="#"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                            className="text-gray-500 hover:text-white ms-5"
                         >
                             <svg
                                 className="w-4 h-4"

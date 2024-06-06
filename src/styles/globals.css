@@ -2,13 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url("https://fonts.googleapis.com/css2?family=Lustria&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
+
+@font-face {
+    font-family: "Lustria";
+    src: url("../assets/Lustria/Lustria-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Garet";
+    src: url("../assets/garet/Garet-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     @apply transition-all;
 }
 
 .cover-makanan {
-    background-image: linear-gradient(to top, rgb(70, 70, 70), rgb(70, 70, 70)),
-        url("../assets/cover-makanan.jpg");
+    background-image: linear-gradient(
+            to top,
+            rgb(180, 180, 180),
+            rgb(180, 180, 180)
+        ),
+        url("../assets/betafood.jpeg");
+}
+
+.cover-makanan-demo {
+    background-image: linear-gradient(
+            to top,
+            rgb(199, 199, 199),
+            rgb(199, 199, 199)
+        ),
+        url("../assets/sigmafood.jpeg");
 }
 
 .btn {

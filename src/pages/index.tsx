@@ -37,7 +37,7 @@ const teams: Array<Person> = [
     },
     {
         nama: "Athar Faiz S.",
-        role: "Raja Iblis",
+        role: "App Production",
         image: foto.AtharJPG,
     },
     {
@@ -113,7 +113,7 @@ export default function Home() {
                     <Image
                         alt="prototype"
                         src={Proto1}
-                        className="lg:h-full w-[800px] h-full"
+                        className="lg:h-auto object-cover lg:w-1/2 h-full"
                     />
                 </div>
             </section>

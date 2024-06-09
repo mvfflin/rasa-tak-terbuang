@@ -7,7 +7,12 @@ import { useEffect, useState } from "react";
 import PersonNull from "../assets/person-placeholder.jpg";
 import Person from "@/types/person";
 import foto from "@/types/fotos";
-import { BiLogoInstagram, BiLogoYoutube, BiWorld } from "react-icons/bi";
+import {
+    BiLogoAndroid,
+    BiLogoInstagram,
+    BiLogoYoutube,
+    BiWorld,
+} from "react-icons/bi";
 import Link from "next/link";
 // import FoodCover from "../assets/cover-makanan.jpg";
 
@@ -208,6 +213,30 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section
+                id="download"
+                className="h-auto w-full py-12 bg-orange-100"
+            >
+                <h1 className="text-3xl font-garet font-bold text-center">
+                    Download our app!
+                </h1>
+                <div className="text-center mt-5">
+                    <Link
+                        href={
+                            "https://drive.google.com/uc?export=download&id=1KB088g3iQdhRIwcC7lxwgYSXENZqNuI8"
+                        }
+                        target="_blank"
+                        download
+                        className="lg:text-lg lg:hover:text-xl rounded-lg text-white bg-green-700 hover:bg-green-600 py-2 mt-20 px-14 w-auto"
+                    >
+                        <BiLogoAndroid className="inline-flex text-2xl" /> APK
+                        File (Android)
+                    </Link>
+                </div>
+                <h1 className="text-lg font-lustria font-semibold text-center mt-5">
+                    Other platforms coming soon!
+                </h1>
             </section>
         </main>
     );

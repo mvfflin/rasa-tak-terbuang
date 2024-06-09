@@ -224,7 +224,7 @@ export default function Home() {
                 <div className="text-center mt-5">
                     <Link
                         href={
-                            "https://drive.google.com/uc?export=download&id=1KB088g3iQdhRIwcC7lxwgYSXENZqNuI8"
+                            "https://drive.google.com/uc?export=download&id=18NS2im3GpX27e8_YV_fr_9ovD87pYKDN"
                         }
                         target="_blank"
                         download

@@ -161,7 +161,7 @@ export default function Home() {
                 </h1>
                 <iframe
                     className="items-center mx-auto mt-10 lg:w-1/2 lg:h-[500px]"
-                    src="https://www.youtube.com/embed/UsIFWidrHIw?si=GvFGEy5AjqQsD5f8"
+                    src="https://www.youtube.com/embed/W6XZ_IAsruE?si=4V4jS8aUa4GLHYRK"
                     title="YouTube Video"
                     frameBorder={0}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
